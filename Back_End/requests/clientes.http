@@ -1,0 +1,53 @@
+
+@api = http://localhost:3000/clientes
+
+###Vista de los clientes ordenado por Apellidos
+GET {{api}}
+
+###
+GET {{api}}/1
+
+###
+GET {{api}}/count
+
+
+### Registrar los clientes
+POST {{api}}
+Content-Type: application/json
+
+{
+    "nombre": "Jhon",
+    "apellidos": "Avila",
+    "edad": "35",
+    "correo": "Jhon@hotmail.com",
+    "nacionalidad": "Cubano",
+    "ci": "652156",
+    "username": "JhonUser",
+    "password": "123cxcv"
+
+}
+
+###
+DELETE {{api}}/21
+
+
+###
+PUT  {{api}}/2
+content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellidos": "Alvarez",
+    "edad": "50"
+    "correo": "Juan@hotmail.com",
+    "nacionalidad": "Argentino",
+     "ci": "854123"
+    "username": "JhonUser",
+    "password": "00023"
+}
+
+###
+GET {{api}}/sebas
+
+
+
